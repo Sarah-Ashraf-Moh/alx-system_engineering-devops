@@ -1,2 +1,2 @@
 #!/bin/bash
-find PATH -type d
+echo $((`echo $PATH | grep -o ":/" | wc -l`+ 1))
